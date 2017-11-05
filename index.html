@@ -1,0 +1,404 @@
+<style>
+body {
+	font: 11px verdana;
+	color: #444;
+	background: #eee;
+}
+center .sf, td {
+	display: none;
+}
+.main td {
+	display: table-cell;
+}
+.center {
+	width: 100%;
+	text-align: center;
+}
+.banner {
+	width: 1012px;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #ddd;
+	margin: 20px auto;
+}
+.banner img.big {
+	width: 1000px;
+	margin: 6px;
+	background: #fff;
+}
+.banner img.fade {
+	width: 1000px;
+	margin-top: -400px;
+	height: 400px;
+}
+.banner h1 {
+	top: 293px;
+	left: 686px;
+	font: small-caps 56px georgia;
+	color: #feb;
+	margin: 0;
+	padding: 0;
+}
+.banner h2 {
+	top: 301px;
+	left: 650px;
+	font: italic 110px georgia;
+	letter-spacing: -10px;
+	color: #311;
+	margin: 0;
+	padding: 0;
+}
+.main {
+	width: 970px;
+	height: 600px;
+	background: url("http://i.imgur.com/rwIj7cm.png");
+	margin: -250px auto 0 auto;
+	overflow: hidden;
+}
+.main .white {
+	top: 229px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+}
+.main .content {
+	top: 12px;
+	bottom: 12px;
+	left: 12px;
+	right: 12px;
+	overflow: hidden;
+}
+.content .section {
+	width: 946px;
+	height: 576px;
+	overflow: auto;
+	margin: 0 0 1000px 0;
+	text-align: justify;
+	line-height: 16px;
+}
+.section h1 {
+	font: small-caps 35px georgia;
+	color: #311;
+	margin: 0 0 10px 40px;
+}
+.section h2 {
+	font: italic 35px georgia;
+	color: #f92;
+	margin: 0 0 10px 40px;
+}
+.section b {
+	font: bold 12px georgia;
+	color: #f92;
+}
+.section i {
+	font: italic 12px georgia;
+	color: #311;
+}
+.section a {
+	text-decoration: none;
+	color: #f92;
+	font: small-caps 14px georgia;
+}
+.section a:hover {
+	color: #311;
+}
+.section ul {
+	list-style-type: none;
+	text-align: left;
+}
+.section li {
+	background: url("http://i.imgur.com/Z5NQTee.png") 0 -4px no-repeat;
+	padding: 4px 0 4px 23px;
+}
+.box {
+	width: 500px;
+	height: 200px;
+	float: right;
+	margin-left: 12px;
+	background: url("http://i.imgur.com/rwIj7cm.png");
+	border: 1px solid #fc8;
+	overflow: auto;
+	text-align: left;
+}
+.date {
+	margin: 0 8px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	font: bold italic 47px georgia;
+	letter-spacing: -1px;
+	color: #f92;
+	width: 67px;
+}
+.date b {
+	display: block;
+	font: bold 28px courier;
+	text-transform: lowercase;
+	color: #311;
+	margin-top: -20px;
+}
+.update {
+	display: inline-block;
+	vertical-align: middle;
+	width: 377px;
+	margin: 8px;
+}
+textarea {
+	border: 1px solid #fc8;
+	overflow: hidden;
+	color: #311;
+	letter-spacing: -2px;
+}
+textarea:hover {
+	font: italic 23px georgia;
+	color: #f92;
+}
+.layout {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 20px;
+}
+.layout img {
+	width: 440px;
+	margin: 8px;
+}
+.layout textarea {
+	width: 440px;
+	height: 110px;
+	margin: 0 8px;
+}
+.button {
+	display: inline-block;
+	vertical-align: top;
+	margin: 4px;
+}
+.button textarea {
+	width: 88px;
+	height: 18px;
+	margin-top: 3px;
+}
+#request textarea {
+	width: 160px;
+	height: 50px;
+}
+.portfolio {
+	text-align: center;
+}
+.portfolio img {
+	height: 120px;
+	padding: 3px;
+	margin: 3px;
+	display: inline-block;
+	border: 1px solid #C4BAB6;
+}
+.col {
+	display: inline-block;
+	vertical-align: top;
+	width: 290px;
+	margin: 8px;
+}
+#sitely .col, #request .col {
+	text-align: center;
+}
+#sitely img {
+	margin: 3px;
+}
+.bottom {
+	width: 1012px;
+	border: 1px solid #ddd;
+	background: #fff;
+	margin: 0 auto;
+}
+.bg {
+	width: 1000px;
+	height: 200px;
+	background: url("http://i.imgur.com/NngTysY.jpg");
+	background-position: center center;
+	margin: 6px;
+	display: inline-block;
+}
+#s1 {
+	margin: -200px auto 10px auto;
+}
+#s1 .bg {
+	background-position: bottom left;
+	height: 35px;
+}
+#s2 {
+	margin: 0 auto 10px auto;
+}
+#s2 .bg {
+	background-position: bottom right;
+	height: 50px;
+}
+.nav {
+	width: 970px;
+	text-align: center;
+	margin: 67px auto 0 auto;
+	font: 0px verdana;
+}
+.nav a {
+	display: inline-block;
+	width: 155px;
+	margin-right: 8px;
+	font: small-caps 18px georgia;
+	line-height: 38px;
+	background: url("http://i.imgur.com/rwIj7cm.png");
+	color: #311;
+	text-decoration: none;
+}
+.nav a:hover {
+	color: #fff;
+	line-height: 38px;
+	background: url("http://i.imgur.com/6KXaQyD.png");
+}
+</style><div class="banner" style="position: relative;">
+  <img src="http://i.imgur.com/NngTysY.jpg" class="big"><img src="http://i.imgur.com/ok3YjtL.png" class="fade"><h1 style="position: absolute;">title</h1>
+  <h2 style="position: absolute;">here </h2>
+</div>
+<div class="main" style="position: relative;">
+  <div class="white" style="position: absolute;"></div>
+  <div class="content" style="position: absolute;">
+    <div class="section" id="welcome">
+      <div class="box">
+        <div class="date">04<b>Jul</b></div>
+        <div class="update">
+          This is your news and updates area! It will scroll if you have too much content and show the three most recent updates.
+        </div>
+        <div class="date">13<b>Jun</b></div>
+        <div class="update">
+          Best to keep things short and sweet; it looks best if you have only two or three lines of text for each news item. You can put more in if you want, but it won't look quite as neat!
+        </div>
+        <div class="date">08<b>May</b></div>
+        <div class="update">
+          Use the three letter short form of each month rather than the longhand name.
+        </div>
+        <div class="date">23<b>Mar</b></div>
+        <div class="update">
+          (This one is just here to demonstrate the scroll)
+        </div>
+      </div>
+      
+      <h1>Welcome to your site</h1>
+      I've set this site up for a layout site, but you can easily use it for anything you want. The sections below are just suggestions - move things around however you want!<br><br>
+      You can put whatever you like in this welcome section; maybe a bit about you, maybe a spotlight of your best creations? Just try to avoid scrolling on this front page - you get two scroll bars next to each other because of the <b>updates section</b> and it ain't pretty.<br><br><h2>Modifying the layout</h2>
+      <ul><li>The banner and footer images can be anything you want - just make sure it's minimum 1000px wide and has some decent height. Most backgorund images will work well.</li>
+        <li>When you change <i>Title here</i> to your site title you may need to move around the positions slightly to make things line up with each other and look neat.</li>
+        <li>Don't forget to update all the <b>Neomail me</b> signs to point to your own username!</li>
+        <li>If you want more or less links at the bottom you can change the width under <i>.nav a { }</i> to make them line up with the main content area.</li>
+        <li>Links are at the bottom so that they stay visible on the screen once you've clicked on them. I <b>wouldn't recommend</b> moving the links to the top because then your visitors will have to scroll up each time they want to navigate to a different section.</li>
+        <li>I've included two premade sections - maybe one for petpages and the other for lookups, maybe for anchored or column layouts, however you want it split!</li>
+      </ul><br><br><div class="center">Comments, questions, suggestions?<br><br><a href="/neomessages.phtml?type=send&recipient=aethelar"><img src="http://i.imgur.com/ix2Gwsj.png"></a></div>
+    </div>
+    <div class="section" id="request">
+      <h1>Requests</h1>
+      <div class="center">
+        <img src="http://i.imgur.com/LV0X8B1.png"></div><br><br><div class="col">
+      <b>Rules (read these carefully):</b>
+        <ul><li>This is a rule</li>
+          <li>This is another rule</li>
+          <li>Put in as many rules as you like, really</li>
+          <li>You can make your rules have long paragraphs as well, they don't need to be short and pithy things. However you want your rules to go.</li>
+        </ul></div>
+      <div class="col">
+        <b>Userlookup request form:</b><br><br>(textarea)Put your request form here(/textarea)<br><br><b>Petpage request form:</b><br><br>(textarea)Put your request form here(/textarea)<br><br><a href="/neomessages.phtml?type=send&recipient=aethelar"><img src="http://i.imgur.com/ix2Gwsj.png"></a>
+      </div>
+      <div class="col">
+        <b>Current request waiting list:</b>
+        <ul><li><i>Name</i> Description of request</li>
+          <li><i>Name</i> Description of request</li>
+          <li><i>Name</i> Description of request</li>
+          <li><i>Name</i> Description of request</li>
+          <li><i>Name</i> Description of request</li>
+        </ul></div>
+    </div>
+    <div class="section" id="pickup">
+      <h1>Completed Requests</h1>
+      <i>Delete as appropriate:</i>
+      <ul><li>If you lose the code <i>{ask me, I keep them all} {I keep codes for a month or so but after that probably can't help} {don't lost the code, numpty}</i></li>
+        <li>Want something changed? <i>{I shall change it ASAP} {you can submit another request} {That's nice, dear}</i></li>
+      </ul><div class="layout">
+        <b>Beetle layout for Emma</b><br><img src="http://i.imgur.com/Et4xpQ5.png"><br>(textarea)code code code code code(/textarea)</div>
+      <div class="layout">
+        <b>Beetle layout for Emma</b><br><img src="http://i.imgur.com/Et4xpQ5.png"><br>(textarea)code code code code code(/textarea)</div>
+      
+      <h2>Past requests</h2>
+      <div class="portfolio">
+        <img src="http://i.imgur.com/Et4xpQ5.png"><img src="http://i.imgur.com/Et4xpQ5.png"><img src="http://i.imgur.com/Et4xpQ5.png"><img src="http://i.imgur.com/Et4xpQ5.png"><img src="http://i.imgur.com/Et4xpQ5.png"><img src="http://i.imgur.com/Et4xpQ5.png"><img src="http://i.imgur.com/Et4xpQ5.png"><img src="http://i.imgur.com/Et4xpQ5.png"></div>
+    </div>
+    <div class="section" id="premadeI">
+      <h1>Layouts</h1>
+      <ul><li>Some rules here, perhaps?</li>
+        <li>Or maybe some usage pointers?</li>
+        <li>These will look best if all your layout previews are the same ratio of height to width. Easiest way is to just take a screenshot and not worry about cropping at all.</li>
+      </ul><div class="layout">
+        <img src="http://i.imgur.com/Et4xpQ5.png"><br>(textarea)code code code code code(/textarea)</div>
+      <div class="layout">
+        <img src="http://i.imgur.com/Et4xpQ5.png"><br>(textarea)code code code code code(/textarea)</div>
+      <div class="layout">
+        <img src="http://i.imgur.com/Et4xpQ5.png"><br>(textarea)code code code code code(/textarea)</div>
+      <div class="layout">
+        <img src="http://i.imgur.com/Et4xpQ5.png"><br>(textarea)code code code code code(/textarea)</div>
+    </div>
+    <div class="section" id="premadeII">
+      <h1>Layouts II</h1>
+      <ul><li>Some rules here, perhaps?</li>
+        <li>Or maybe some usage pointers?</li>
+        <li>These will look best if all your layout previews are the same ratio of height to width. Easiest way is to just take a screenshot and not worry about cropping at all.</li>
+      </ul><div class="layout">
+        <img src="http://i.imgur.com/Et4xpQ5.png"><br>(textarea)code code code code code(/textarea)</div>
+      <div class="layout">
+        <img src="http://i.imgur.com/Et4xpQ5.png"><br>(textarea)code code code code code(/textarea)</div>
+      <div class="layout">
+        <img src="http://i.imgur.com/Et4xpQ5.png"><br>(textarea)code code code code code(/textarea)</div>
+      <div class="layout">
+        <img src="http://i.imgur.com/Et4xpQ5.png"><br>(textarea)code code code code code(/textarea)</div>
+    </div>
+    <div class="section" id="sitely">
+      <h1>Sitely</h1>
+      <div class="center">
+        <b>Link back?</b><br><br><div class="button">
+          <img src="http://imgur.com/xybpaRq.png"><br>(textarea)(/textarea)</div>
+        <div class="button">
+          <img src="http://imgur.com/xybpaRq.png"><br>(textarea)(/textarea)</div>
+        <div class="button">
+          <img src="http://imgur.com/xybpaRq.png"><br>(textarea)(/textarea)</div>
+        <div class="button">
+          <img src="http://imgur.com/xybpaRq.png"><br>(textarea)(/textarea)</div>
+        <div class="button">
+          <img src="http://imgur.com/xybpaRq.png"><br>(textarea)(/textarea)</div>
+      </div><br><br><br><div class="col">
+        <b>Affiliates</b><br><br><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"></div>
+      <div class="col">
+        <b>Listers</b><br><br><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"><img src="http://imgur.com/vM9jaSe.png"></div>
+      <div class="col">
+      <b>Credits</b>
+        <ul><li>Layout by <a href="/~accury">Beetle</a></li>
+          <li>Banner image by <i>eskipaper.com</i></li>
+          <li>Low opacity fills by <a href="/~cecira">lolwat.</a></li>
+          <li>Bullets, request status and neomail signs by <a href="/~drelda">Bejeweled</a></li>
+          <li>Button placeholders by <a href="/~crosslands">Landscape</a></li>
+        </ul></div>
+    </div>
+  </div>
+</div>
+<div class="bottom" id="s1">
+  <div class="bg"></div>
+</div>
+<div class="bottom" id="s2">
+  <div class="bg"></div>
+</div>
+<div class="bottom">
+  <div class="bg">
+    <div class="nav">
+      <a href="#welcome">Welcome</a>
+      <a href="#request">Requests</a>
+      <a href="#pickup">Pickup</a>
+      <a href="#premadeI">Premades I</a>
+      <a href="#premadeII">Premades II</a>
+      <a href="#sitely" style="margin: 0;">Sitely</a>
+    </div>
+  </div>
+  
+</div>
